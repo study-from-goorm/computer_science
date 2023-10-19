@@ -25,7 +25,8 @@
 
 예를들어 `let a = 10` 변수 a에 숫자리터럴 10을 할당을 하였고 다음 줄에 `a = 11`이렇게 작성한다면 데이터가 변경되는거 아닐까?라고 생각할 수 있다. 하지만 이것은 변수 a에 값이 10이 할당되었다가 11이 **재할당**되는 것 뿐이다. 즉, 메모리에 저장된 데이터 10, 11은 변경할 수 없다.(Read Only) 예시를 이미지로 이해해보자.
 
-![원시 타입 데이터 - 데이터 불변성](./step1.png)
+![step1](https://github.com/Develsopher/computer_science/assets/78126381/6dcb6b34-bcac-4128-9b7c-df40ce412f48)
+
 
 변수 a는 단지 메모리주소(0x00000F2, 0x901000F)가 너무 길고 복잡하기 때문에 `a`라는 이름을 부여한 것이다. 처음 메모리주소가 지정된 메모리 공간에 **10**이 할당되고 **11**을 변수에 재할당하고자 하면 변수`a`는 다른 메모리 주소값을 가진다.
 
@@ -73,7 +74,8 @@ console.log(apple === banana); // false ,  true === false의 결과는 false이�
 
 apple에 할당되었던 불리언값 **true**는 banana 변수에 **true** 값 그자체로 복사되어 전달이 된다. 따라서 apple과 banana는 **각각의 불리언 데이터** true를 가지게 된다.
 
-![원시 타입 데이터 - 값에 의한 전달](./step2.png)
+![step2](https://github.com/Develsopher/computer_science/assets/78126381/ce8cc01a-7240-485a-a87f-b7c2ca9a7400)
+
 
 따라서 각각의 변수에 다른값을 재할당하여도 서로의 데이터에는 영향을 끼치지 않는다.
 
@@ -116,7 +118,8 @@ fruit.count = 3; // 프로퍼티 동적  생성
 
 변수 `fruit`은 힙영역에 담겨 있는 메모리주소를 가르킨다. 해당 메모리 주소를 통해 객체에 직접 접근이 가능하다. `fruit.name`을 통해 객체에 있는 프로퍼티들에 접근을 할 수 있다. 예시처럼 프로퍼티를 동적 변경, 생성, 삭제 등의 행위를 할 수 있고 **참조 데이터는 변경이 가능함**을 의미한다.
 
-![참조 타입 데이터 - 데이터 변경가능](./step3.png)
+![step3](https://github.com/Develsopher/computer_science/assets/78126381/e87b4eaa-69bb-4eac-8bd4-fcf36d2def1f)
+
 
 객체의 크기는 가늠할 수 없기때문이고 실제로 크기도 클 수 있기때문에 메모리의 성능을 위해 하나의 객체를 참조하는 방식이다.
 
@@ -135,7 +138,8 @@ let meat = fruit;
 console.log(meat === fruit); //객체가 담겨져 있는 메모리 주소값이 같음
 ```
 
-![참조 타입 데이터 - 참조값에 의한 전달](./step4.png)
+![step4](https://github.com/Develsopher/computer_science/assets/78126381/8541f6f5-2e3d-4b44-aaeb-81b6a861dcf4)
+
 
 이는 프로그램밍을 하면서 꽤나 유의깊게 살펴봐야 한다.
 
