@@ -19,10 +19,13 @@
  
 ## BST(Binary Search Tree)
  : 왼쪽과 오른쪽 노드 값을 비교하였을 때, 오른쪽에 큰 값을 두는 것이 특징.
- 
+- 균형잡힌 트리가 아닐 때, 입력되는 값의 순서에 따라 한쪽으로 노드들이 몰릴 수 있다. -> 탐색하는 데 시간이 오래 걸린다.
 ![image](https://github.com/Hyejin724/computer_science/assets/148074385/bde291ec-145c-4996-acf7-0e7a6a382ac6)
 
-
+## AVL Tree
+- 한쪽으로 치우치는 BST의 한계점을 보완하기 위해 만들어진 균형 잡힌 이진 트리
+- 좌/우 데이터를 균형잡힌 상태로 유지하기 추가적인 연산을 진행
+  
 ## Full Binary Tree
 : 모든 노드가 0 혹은 2개의 child node를 가진 형태
 
@@ -32,4 +35,25 @@
 : 마지막을 제외한 모든 레벨에서 노드들이 왼쪽부터 존재하는 형태
 
 ![image](https://github.com/Hyejin724/computer_science/assets/148074385/111bfa3b-65fe-44e0-8fd9-8fe614adb800)
+
+# Binary Tree 순회 방법
+
+![image](https://github.com/Hyejin724/computer_science/assets/148074385/0a907984-b92a-4bf5-8104-c21b518a4654)
+
+## Inorder
+- 순서 : Left - Root - Right
+- 4 2 5 1 3 
+
+## Preorder
+- 순서 : Root - Left - Right
+- 1 2 4 5 3
+
+## Postorder
+- 순서 : Left - Right - Root
+- 4 5 2 3 1
+
+
+
+
+
 
