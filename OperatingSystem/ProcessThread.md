@@ -13,7 +13,7 @@
 
 
 ### 👉🏻 프로세스의 데이터 구조
-<p align="center"><img src="./processDS.png" alt="mvc_model1"/></p>
+<p align="center"><img src="./assets/processDS.png" alt="mvc_model1"/></p>
 
 
 

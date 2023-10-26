@@ -6,7 +6,7 @@
 - 즉, 여러 프로세스 중 어느 것을 `먼저 실행`할지 결정하는 방법론
 
 ##### 프로세스의 상태
-<p align="center"><img src="https://user-images.githubusercontent.com/13609011/91695344-f2dfae80-eba8-11ea-9a9b-702192316170.jpeg
+<p align="center"><img src="./assets/processStatus.png
 " alt="mvc_model1"/></p>
 
 
@@ -22,7 +22,7 @@
       1. 자원 활용도 (resource utilization) : 주어진 시간동안 자원이 활용된 시간
       2. 작업처리량 (throughput) : 단위 시간 동안 완료된 작업의 수
       3. 응답시간 (respoinse time) : 작업 요청으로부터 응답을 받을때 까지의 시간
-<p align="center"><img src="https://postfiles.pstatic.net/MjAyMTEwMjVfNjkg/MDAxNjM1MTU0MTEzMDE3.A_k2VFn0MPTPCCGRaxTcyvNbgH17vEnLXda8rsn1Eucg.1_WP6hvuPq2oZtxmdE8fwjb1XWrv44dzA-nUS1OpvNsg.PNG.znfhdl789/image.png?type=w773
+<p align="center"><img src="./assets/schedulingTime.png
 " alt="mvc_model1"/></p>
 
 
