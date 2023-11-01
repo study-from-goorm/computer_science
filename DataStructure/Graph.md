@@ -142,3 +142,5 @@ Node(정점)와 Edge(간선)로 이뤄져 각 node들이 연결되어 시각적�
 3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복한다.
 ![Alt text](image-7.png)
 ![Alt text](image-8.png)
+
+HIHI
