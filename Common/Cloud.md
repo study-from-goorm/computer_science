@@ -34,13 +34,13 @@
 - ### IaaS (Infrastructure-as-a-Service)
   - 가장 기본적인 클라우드 서비스 모델
   - 사용자는 제공된 인프라 위에 원하는 소프트웨어를 자유롭게 설치, 관리
-  - 플랫폼에 종속 되지않아 유연성/이식성이 높지만 운영비 효율이 낮음
+  - 플랫폼에 종속 되지않아, 유연성/이식성이 높지만 운영비 효율이 낮음
   - **예시**: AWS EC2, Google Compute Engine
 
 - ### PaaS (Platform-as-a-Service)
   - 인프라와 함께 플랫폼 제공
   - 사용자는 애플리케이션 개발에 집중, 나머지 관리는 클라우드가 수행
-  - 플램폿에 종속되지 않아 유연성/이식성이 낮고 운영이 효율이 좋다
+  - 플램폿에 종속되어, 유연성/이식성이 낮지만 운영이 효율이 좋다
   - 모니터링, CI/CD가 제공 됨
   - **예시**: Heroku, Google App Engine
 > **CI/CD (Continuous Integration/Delivery & Deployment)**
@@ -78,3 +78,4 @@
 - 구글은 매주 약 20억 개의 컨테이너를 도커를 통해 관리 (2014년도)
 
 ---
+> 출처 : https://www.inflearn.com/course/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A9%B4%EC%A0%91-cs-%ED%8A%B9%EA%B0%95/dashboard
