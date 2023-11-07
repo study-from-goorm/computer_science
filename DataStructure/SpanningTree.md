@@ -20,7 +20,7 @@
 
 ### 통신 네트워크 구축
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 - 회사 내의 모든 전화기를 가장 적은 수의 케이블을 사용하여 연결하고자 하는 경우
 - n개의 위치를 연결하는 통신 네트워크를 최소의 링크를 이용하여 구축하고자 하는 경우, 최소 링크의 수는 n-1개가 되고, 따라서 Spanning Tree가 가능해진다.
@@ -46,7 +46,7 @@
 ## 사용 예시
 
 ### 통신망, 도로망, 유통망에서 길이, 구축 비용, 전송 시간을 최소로 구축하는 경우
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
 1. 도로 건설
     - 도시들을 모두 연결하면서 도로의 길이가 최소가 되도록 하는 문제
 2. 전기 회로
@@ -72,7 +72,7 @@
     - 사이클을 형성하는 간선을 제외한다.
 3. 해당 간선을 현재의 MST(최소 비용 신장 트리)의 집합을 추가한다.
 
-![Alt text](KruskalAlgorithm.gif)
+![Alt text](images/KruskalAlgorithm.gif)
 
 ### Kruskal 알고리즘 시간 복잡도
 간선들을 정렬하는 시간에 좌우된다.
@@ -90,7 +90,7 @@
     - 즉, 가장 낮은 가중치를 먼저 선택
 3. 1-2 과정을 트리가 (n-1)개의 간선을 가질 때까지 반복한다.
 
-![Alt text](PrimAlgorithm.gif)
+![Alt text](images/PrimAlgorithm.gif)
 
 ### Prim 알고리즘 시간 복잡도
 주 반복문이 정점의 수 n만큼 반복하고, 내부 반복문이 n번 반복하여 O(n^2)이 된다.
