@@ -2,6 +2,8 @@
 
 데이터베이스의 세계는 항상 발전하고 있습니다. 초기 데이터 관리 시스템에서부터 지금까지, 데이터의 중요성이 늘어나면서 그 저장과 검색 방법도 다양해졌습니다. 관계형 데이터베이스(RDBMS)는 오랜 시간 동안 업계의 표준으로 사용되어왔지만, 스케일과 다양한 데이터 형식의 필요성이 높아지면서 NoSQL이 대안으로 떠오르게 되었습니다.
 
+(cf. 데이터의 종류 : 정형, 반정형, 비정형)
+
 이제 둘 사이의 주요 차이점을 표와 함께 간략하게 살펴보겠습니다.
 
 ---
@@ -9,7 +11,7 @@
 ### 1️⃣ 대표적인 예시 📖
 
 - **RDBMS**: MySQL, Oracle, Microsoft SQL Server(Ms SQL)
-- **NoSQL**: MongoDB[* JS], Cassandra[* CQL], Redis[* 명령어 기반], Couchbase[* N1QL]
+- **NoSQL**: MongoDB[* JS], Redis[* 명령어 기반], Cassandra[* CQL], Couchbase[* N1QL]
 
 ---
 
