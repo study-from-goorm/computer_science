@@ -17,7 +17,7 @@
 > 사용자 : Resource Owner  
 > B Service : Client  
 > A Service : Resource Server, Authorization Server  
-> Access Token : A Service가 필요로 하는 부분적인 기능만 허가  
+> Access Token : B Service가 필요로 하는 부분적인 기능만 허가  
  
  ---
 
@@ -50,7 +50,7 @@
 
 #### 6. Client가 발급받은 Access Token으로 Resource Server의 API를 사용하여 기능을 사용한다
 
-#### 7. Client는 Access Token을 발급 받을 때, Refresh Tokendmf 함께 발급 받고, 모두 저장 해둔다
+#### 7. Client는 Access Token을 발급 받을 때, Refresh Token을 함께 발급 받고, 모두 저장 해둔다
 - 이후 Access Token이 만료되어 401 에러가 발생하면, Refresh Token을 보내 새로운 Access Token을 발급 받는다
 
 
