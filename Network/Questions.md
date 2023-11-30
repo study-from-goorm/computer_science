@@ -13,6 +13,10 @@
 
 - Https
   - Http로 주고받는 자원은 text형식이기 때문에 정보노출을 시키지않기 위해선 `Https`가 필요하다.
+ 
+- Connectless -> Stateless
+  - 많은 수의 동시접속을 막아준다.
+  - 대신에 브라우저에서 jwt, session, cookie 와 같이 추가작업이 필요하다.
 
 ### Method 종류
 
