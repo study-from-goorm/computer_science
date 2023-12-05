@@ -85,12 +85,12 @@ Node(정점)와 Edge(간선)로 이뤄져 각 node들이 연결되어 시각적�
 ## 인접 행렬 
 ### 무방향 그래프
 
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 : 정점들을 배열의 인덱스로 표현하여, 두 정점이 연결되어 있다면 1로, 연결되어 있지 않다면 0으로 표현한다.
 
 ### 방향 그래프
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 : 해당 정점에서 다른 정점으로 가는 간선이 있다면 1로, 없다면 0으로 표현한다.
 
@@ -98,17 +98,17 @@ Node(정점)와 Edge(간선)로 이뤄져 각 node들이 연결되어 시각적�
 
 ### 무방향 그래프
 : 각 정점을 head로 시작해 인접한 노드들을 전부 연결 리스트로 연결한다.
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 ### 방향 그래프
 : 각 정점을 head로 시작해 들어가는 노드를 전부 연결리스트로 연결한다.
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 * 연결 리스트에 정점이 입력되는 순서에 따라 연결 리스트 내에서 정점의 순서가 달라질 수 있지만 표현의 일관성을 위해 오름차순으로 연결된다고 가정한다.
 
 ## 어떤 방법이 더 유리할까? 
 
-![Alt text](image-4.png)
+![Alt text](images/image-4.png)
 
 <details>
 <summary> 예시 </summary>
@@ -129,8 +129,8 @@ Node(정점)와 Edge(간선)로 이뤄져 각 node들이 연결되어 시각적�
 2. 스택의 최상단 노드에 방문하지 않은 인접한 노드가 하나라도 있으면 그 노드를 스택에 넣고 방문 처리한다. 방문하지 않은 인접 노드가 없다면 스택에서 최상단 노드를 꺼낸다.
 3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복
 * 방문 기준 : 번호가 가장 낮은 인접 노드부터
-![Alt text](image-5.png)
-![Alt text](image-6.png)
+![Alt text](images/image-5.png)
+![Alt text](images/image-6.png)
 
 
 ## BFS(Breadth First Search) : 너비 우선 탐색
@@ -140,7 +140,5 @@ Node(정점)와 Edge(간선)로 이뤄져 각 node들이 연결되어 시각적�
 1. 탐색 시작 노드를 큐에 삽입하고 방문 처리를 한다.
 2. 큐에서 노드를 꺼낸 뒤에 해당 노드의 인접 노드 중에 방문하지 않은 노드를 모두 큐에 삽입하고 방문 처리 한다.
 3. 더 이상 2번의 과정을 수행할 수 없을 때까지 반복한다.
-![Alt text](image-7.png)
-![Alt text](image-8.png)
-
-HIHI
+![Alt text](images/image-7.png)
+![Alt text](images/image-8.png)
