@@ -186,10 +186,11 @@ Content-Type: text/html;
 ![](https://velog.velcdn.com/images/k-minsik/post/08370314-cf97-4a35-8486-b8c8901271b8/image.png)
 >QUIC(Quick UDP Internet Connections) : 구글에 의해 개발된, 새로운 인터넷 전송 프로토콜
 
-- HTTP/2는 TCP로 인해 3-RTT가 필요했지만, QUIC는 1-RTT만 필요하다는 장점을 지님
-- HTTP/2의 경우 TCP 3-handshake, TLS-handshake가 필요
-- HTTP/3의 경우 TLS-handshake로 한번에 클라이언트와 서버간의 연결, 암호화 통신 모두 다 구축
-![](https://velog.velcdn.com/images/k-minsik/post/d7382448-eccb-43d0-ad16-ae382abab80b/image.png)
+- HTTP/2는 3-RTT가 필요했지만, HTTP/3은 QUIC로 인해 1-RTT만 필요하다는 장점을 지님
+- HTTP/2의 경우 TCP 3-handshake 1-RTT, TLS1.2-handshake 2-RTT가 필요
+- HTTP/3의 경우 TLS1.3-handshake로 한번에 클라이언트와 서버간의 연결로 1-RTT, 암호화 통신 모두 다 구축
+![](https://velog.velcdn.com/images/k-minsik/post/3ae30bbd-f8f4-4a05-a66d-bc0d185be50c/image.png)
+
 
 - 전송된 패킷이 손실 되었다면 수신측에서 에러를 검출하고 수정하는 방식이며 열악한 네트워크 환경에서도 낮은 패킷 손실률을 자랑하는 순방향 오류 수정 메커니즘(FEC, Forward Error Correction)이라는 특징을 지님
 
