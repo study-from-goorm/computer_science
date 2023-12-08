@@ -97,12 +97,12 @@
 
 ### 장점
 
-- 인증 정보에 대한 별도의 저장소가 필요 없어 **DB조회에 대한 서버의 부담 완화**
-  ⇒ 이로써 서버는 무상태(Stateless)가 되어 서버 확장성이 우수해질 수 있다
+- 인증 정보에 대한 별도의 저장소가 필요 없어 **DB조회에 대한 서버의 부담 완화**  
+  ⇒ 이로써 서버는 무상태(Stateless)가 되어 서버 확장성이 우수해질 수 있다  
   cf) Session - 서버에서 유저 인증 상태 정보를 저장
 - Signature를 통해 **데이터 위변조**를 막을 수 있다.
-- 인증에 필요한 **모든 정보를 자체적으로 지니고** 있다.
-  - 토큰에 사용자별 권한 설정 가능 → 개인화된 토큰 발행
+- 인증에 필요한 **모든 정보를 자체적으로 지니고** 있다.  
+  - 토큰에 사용자별 권한 설정 가능 → 개인화된 토큰 발행  
 - **모바일** 어플리케이션 환경에서 활용 가능하다. (모바일- 세션 사용 불가능)  
   <br/>
 
@@ -111,9 +111,12 @@
 - 토큰 자체에 모든 정보를 담고 있음 → 양날의 검
 - 토큰 길이 : 토큰의 payload에 담긴 claim 정보가 많아질수록 토큰 길이가 늘어나 **네트워크 부하 발생** 가능
 - **Payload 자체는 암호화 된 것이 아니다**
-  - BASE64로 인코딩된 것이기 때문에 중간에 payload를 탈취, 디코딩한다면 데이터를 조회 가능
+  - BASE64로 인코딩된 것이기 때문에 중간에 payload를 탈취, 디코딩한다면 데이터를 조회 가능  
     → 중요 데이터는 포함시키지 않아야!
-- **클라이언트측 저장 방식의 한계**로 인한 보안 문제 - stateless특징으로 토큰은 클라이언트 측에서 관리, 저장되지만 - 이 특성 때문에 토큰이 탈취당할 경우 대처가 어렵다. ⇒ Access, Refresh 이중 인증 방식  
+- **클라이언트측 저장 방식의 한계**로 인한 보안 문제  
+  - stateless 특징으로 토큰은 클라이언트 측에서 관리, 저장되지만  
+  - 이 특성 때문에 토큰이 탈취당할 경우 대처가 어렵다.  
+    ⇒ Access, Refresh 이중 인증 방식  
   <br/>
 
 ### Access Token, Refresh Token
@@ -126,11 +129,19 @@
 
 - Access Token 단일 인증 방식의 문제점
 
-  - JWT는 발급 후 삭제 불가능 → 토큰을 제3자에게 탈취당할 경우 보안에 취약
+  - JWT는 발급 후 삭제 불가능  
+  → 토큰을 제3자에게 탈취당할 경우 보안에 취약
 
   **⇒ Access token에 짧은 유효시간을 부여, 이를 재발급할 수 있는 Refresh Token을 추가로 발급함**
 
-- 원리 - 서버는 Refresh Token만, 클라이언트는 Refresh, Access token 모두 저장 - 사용자가 인증이 요구되는 API에 접근하면, 토큰 유효성을 검사한다. - access, refresh 모두 만료 : 재로그인 - access만 만료 : refresh token을 검증해 access token 재발급 - refresh만 만료 : access token을 검증해 refresh token 재발급 - 모두 유효 : 정상 처리  
+- 원리  
+  - 서버는 Refresh Token만, 클라이언트는 Refresh, Access token 모두 저장  
+  - 사용자가 인증이 요구되는 API에 접근하면, 토큰 유효성을 검사한다.  
+  - access, refresh 모두 만료 : 재로그인  
+  - access만 만료 : refresh token을 검증해 access token 재발급  
+  - refresh만 만료 : access token을 검증해 refresh token 재발급  
+  - 모두 유효 : 정상 처리  
+
   <br/>
   <br/>
   <br/>
@@ -152,7 +163,10 @@
 ### 2. 쿠키 (HTTP Only, Secure)
 
 - 쿠키 역시 자바스크립트로 접근 가능 ⇒ HTTP Only, Secure 옵션으로 방지
-- 문제점 - 토큰값 자체의 탈취는 거의 막을 수 있으나, CSRF(Cross-Site Request Forgery) 공격에 취약 - 보완 방법 : RTR(Refresh Token Rotation) 도입 → Refresh token을 일회용으로 만들어 탈취된 토큰이 무한정 사용되는 것을 막아줌  
+- 문제점  
+  - 토큰값 자체의 탈취는 거의 막을 수 있으나, CSRF(Cross-Site Request Forgery) 공격에 취약  
+- 보완 방법 : RTR(Refresh Token Rotation) 도입  
+  → Refresh token을 일회용으로 만들어 탈취된 토큰이 무한정 사용되는 것을 막아줌  
   <br/>
   <br/>
 
