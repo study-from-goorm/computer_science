@@ -65,15 +65,18 @@
    ![Alt text](./images//CORS-1.png)
    - `Origin` : 요청이 시작된 서버 URI  
      <br/>
-2. **서버 : 응답 헤더에 Access-Control-Allow-Origin 담아 전송**
+2. **서버 : 응답 헤더에 Access-Control-Allow-Origin 담아 전송**  
+
    ![Alt text](./images/CORS-2.png)
    - `Access-Controll-Allow-Origin` : `<Origin>` || `*`
    - `*` (와일드카드) : 브라우저의 Origin에 상관 없이 모든 리소스에 접근하도록 허용함  
      <br/>
-3. 응답을 받은 브라우저는 `Origin`과 `Access-Control-Allow-Origin`을 비교 - 동일한 경우 : 유효한 요청으로 판단, 정상적으로 리소스를 가져옴 - 동일하지 않음 (유효하지 않은 요청) : CORS 에러 발생, 응답을 폐기한다.  
-   <br/>
-   <br/>
-   <br/>
+3. 응답을 받은 브라우저는 `Origin`과 `Access-Control-Allow-Origin`을 비교  
+    - 동일한 경우 : 유효한 요청으로 판단, 정상적으로 리소스를 가져옴  
+    - 동일하지 않음 (유효하지 않은 요청) : CORS 에러 발생, 응답을 폐기한다.  
+<br/>
+<br/>
+<br/>
 
 ### CORS 작동 방식 시나리오 (3가지)
 
@@ -116,6 +119,7 @@
     - `Accept`, `Accept-Language`, `Content-Language`, `Content-Type`, `DPR`, `Downlink`, `Save-Data`, `Viewport-Width`, `Width` 헤더일 경우에만 적용됨
     - Content-Type 헤더가 `aplication/x-www-form-urlencoded`, `multipart/form-data`, `text/plain` 중 하나여야 함  
     <br/>
+
     > => 대부분의 API 요청은 Preflight으로 이뤄진다고 이해해도 무방
 
 <br/>
