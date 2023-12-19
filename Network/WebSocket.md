@@ -83,17 +83,19 @@ Origin: https://zep.us
 
 <br/>
 
-- 클라이언트에서 핸드쉐이크 요청(HTTP Upgrade)을 전송하고, 이에 대해 핸드셰이크 응답을 받는데, 이 때 응답코드는 **`101 Switching Protocols`** 이다.
+- 클라이언트에서 핸드쉐이크 요청(HTTP Upgrade)을 전송하고, 이에 대해 핸드셰이크 응답을 받는데, 이 때 응답코드는 **`101 Switching Protocols`** 이다.  
+
 <br/>
 
-    ```
-    101 Switching Protocols
-    Upgrade: websocket
-    Connection: Upgrade
-    Sec-WebSocket-Accept: ...
-    ```
-    - **`Sec-WebSocket-Accept`**: 요청 헤더의 Sec-WebSocket-Key에 유니크 아이디를 더해 SHA-1로 해싱 및 base64로 인코딩한 결과  
-    => 웹소켓 연결 개시를 알림
+```
+101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: ...
+```  
+
+> * **`Sec-WebSocket-Accept`**: 요청 헤더의 Sec-WebSocket-Key에 유니크 아이디를 더해 SHA-1로 해싱 및 base64로 인코딩한 결과  
+=> 웹소켓 연결 개시를 알림
 
 <br/>
 
