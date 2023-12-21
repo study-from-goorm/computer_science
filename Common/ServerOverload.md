@@ -1,7 +1,8 @@
----
+
 ## 서버 과부하
 - 서버가 리소스를 소진하여 들어오는 요청을 처리하지 못할 때 발생
 - 이 때, 서버는 사용자의 웹요청을 처리하지 못해 응답없음이 뜸
+  
 ![](https://velog.velcdn.com/images/k-minsik/post/8e1cecff-c18a-4427-b7fe-329d9a7d5f2f/image.png)
 
 ---
