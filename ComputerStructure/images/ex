@@ -1,0 +1,24 @@
+acquire() {
+    while(lock == true);
+    lock = true;
+}
+release(){
+    lock = false;
+}
+
+
+wait () {
+    while ( S <= 0 ); // 임계 구역에 진입할 수 있는 프로세스 개수가 0 이하라면 사용 가능 자원 반복 확인
+    S--; 하나 이상이라면 S를 1 감소하고, 임계 구역 진입한다.
+    if( S < 0 ) {
+    add this process to Queue; // 해당 프로세스 PCB를 대기 큐에 삽입한다.
+    sleep(); // 대기 상태로 접어든다.
+}
+
+signal () {
+    S++; // 임계 구역에서의 작업을 마친 뒤 S를 1 증가
+    if ( S <= 0 ) {
+    remove a process p from Queue; // 대기 큐에 있는 프로세스 p를 제거한다.
+    wakeup(p); // 프로세스 p를 대기 상태에서 준비 상태로 만든다.
+}
+
