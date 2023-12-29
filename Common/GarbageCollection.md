@@ -12,9 +12,7 @@ C언어에서의 간단한 예시:
 
 ## JAVA에서의 가비지 컬렉션 🌿
 
-
 <img src="https://i0.wp.com/www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/images/gcslides/Slide5.png">
-
 
 ##### 출처: oracle.com
 
