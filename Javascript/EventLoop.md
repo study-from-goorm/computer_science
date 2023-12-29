@@ -18,7 +18,7 @@
 - 블로킹(Blocking) : 다른 요청의 작업을 처리하기 위해 현재 작업을 block(차단)함  
     → 특정 작업이 전체적인 작업 흐름을 막는 것
     <div align="center">
-    <img src="https://www.researchgate.net/publication/312384750/figure/fig18/AS:451189226643469@1484583302524/Blocking-and-non-blocking-operation-calls.png" /></div>
+    <img src="./images/blockingNonblocking.png" /></div>
     <br/>
 - 예) if "동기적으로" AJAX 요청 → 모든 응답이 완료될 때까지 브라우저 작업이 중단됨  
     (동기적으로 실행되는 네트워크 요청이 콜 스택을 블로킹)  
