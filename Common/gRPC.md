@@ -6,6 +6,7 @@ RPC는 `멀리 떨어져 있는 시스템 간에 마치 같은 공간에서 함�
 
 > - 우리가 만드는 App[Java Spring - React]은 하나의 서비스라고 볼 수 있습니다.
 > - 심지어 같은 로컬 네트워크가 아니어도 통신이 가능합니다.
+> - 하향식 단위테스트에서의 stub와는 모두 '대체품'이라는 공통된 개념을 가지고 있지만 사용되는 맥락과 목적이 매우 다릅니다. (아직 만들어지지 않은 하위 모듈의 간단한 대체품)
 
 <img src="https://getoutsidedoor.com/wp-content/uploads/2019/07/grpc-overview-939x1024.png">
 
