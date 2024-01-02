@@ -6,7 +6,6 @@ RPC는 `멀리 떨어져 있는 시스템 간에 마치 같은 공간에서 함�
 
 > - 우리가 만드는 App[Java Spring - React]은 하나의 서비스라고 볼 수 있습니다.
 > - 심지어 같은 로컬 네트워크가 아니어도 통신이 가능합니다.
-> - 하향식 단위테스트에서의 stub와는 모두 '대체품'이라는 공통된 개념을 가지고 있지만 사용되는 맥락과 목적이 매우 다릅니다. (아직 만들어지지 않은 하위 모듈의 간단한 대체품)
 
 <img src="https://getoutsidedoor.com/wp-content/uploads/2019/07/grpc-overview-939x1024.png">
 
@@ -16,6 +15,8 @@ RPC는 `멀리 떨어져 있는 시스템 간에 마치 같은 공간에서 함�
 ### 스텁(Stub)이란?
 스텁은 RPC의 핵심 개념으로, 클라이언트와 서버 간의 매개체 역할을 하며, 데이터(parameter)를 메시지로 변환(Marshaling)하거나 역변환(Unmarshaling)하는 역할을 합니다. 클라이언트 스텁은 함수 호출의 파라미터 변환을, 서버 스텁은 받은 메시지를 다시 함수의 인자로 변환하여 처리합니다.
 
+> - 하향식 단위테스트에서의 stub와는 모두 '대체품'이라는 공통된 개념을 가지고 있지만 사용되는 맥락과 목적이 매우 다릅니다. (아직 만들어지지 않은 하위 모듈의 간단한 대체품)
+
 <img src="https://knowledge.ni.com/servlet/rtaImage?eid=ka03q0000012k11&feoid=00N3q00000HUsuI&refid=0EM3q000002OZRJ">
 
 ##### 출처 : https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000oxQGCAY&l=en-US
@@ -24,7 +25,7 @@ RPC는 `멀리 떨어져 있는 시스템 간에 마치 같은 공간에서 함�
 
 프로토콜 버퍼는 구글이 개발한 언어 중립적이고 플랫폼 중립적인 데이터 직렬화 방식입니다. XML이나 JSON보다 훨씬 효율적이며, 작고 빠르며 확장 가능합니다. gRPC는 이 프로토콜 버퍼를 사용하여 어떤 언어나 시스템에서도 쉽게 데이터를 주고받을 수 있습니다.
 
-- gRPC는 IDL(Interface Definition Language)로 프로토콜 버퍼를 사용합니다.
+> - gRPC는 IDL(Interface Definition Language)로 프로토콜 버퍼를 사용합니다.
 
 ## gRPC의 장점 ☀️
 - **고성능**: HTTP/2와 프로토콜 버퍼 덕분에 매우 빠른 데이터 전송이 가능합니다.
